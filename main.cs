@@ -2,17 +2,17 @@ using System;
 using System.Threading.Tasks;
 using System.IO;
 
-class Program {
+class Program
+{
   public static async Task Main()
-    {
+	{
       	String answer;
 	    int counter = 0;
-
 
 		Console.Write("do you want to quit? (yes or no): ");
         answer = Convert.ToString(Console.ReadLine());
 
-	  	while (answer == "no")
+		while (answer == "no")
 		{
 			if (answer == "no")
 			{
