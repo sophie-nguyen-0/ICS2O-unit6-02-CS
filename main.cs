@@ -4,8 +4,8 @@ using System.IO;
 
 class Program
 {
-  	public static async Task Main()
-	{
+    public static async Task Main()
+	  {
       	String answer;
 	      int counter = 0;
 
@@ -28,7 +28,7 @@ class Program
 	        	    answer = Convert.ToString(Console.ReadLine());
 			      }
 		    }
-		    counter = 0;
+        counter = 0;
 		    Console.WriteLine("\nDone.");
 
 
