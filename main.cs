@@ -5,8 +5,8 @@ using System.IO;
 class Program
 {
     public static async Task Main()
-	{
-      	String answer;
+    {
+        string answer;
 	    int counter = 0;
 
 		Console.Write("do you want to quit? (yes or no): ");
@@ -14,8 +14,6 @@ class Program
 
 		while (answer == "no")
 		{
-			if (answer == "no")
-			{
 				counter ++;
 			    Console.WriteLine("the counter is at " + counter);
 
@@ -26,9 +24,7 @@ class Program
 
 		        Console.Write("do you want to quit? (yes or no): ");
 	        	answer = Convert.ToString(Console.ReadLine());
-			}
 		}
-        counter = 0;
 		Console.WriteLine("\nDone.");
 
 
