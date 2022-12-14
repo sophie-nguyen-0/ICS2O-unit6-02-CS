@@ -4,7 +4,7 @@ using System.IO;
 
 class Program
 {
-public static async Task Main()
+    public static async Task Main()
     {
         string answer;
         int counter = 0;
