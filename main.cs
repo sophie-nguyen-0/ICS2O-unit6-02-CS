@@ -8,24 +8,28 @@ class Program {
       	String answer;
 	    int counter = 0;
 
-        await File.WriteAllTextAsync("WriteText.txt", counter.ToString());
-        Console.WriteLine("File Created ...");
-
-        var someText = await File.ReadAllTextAsync(@"WriteText.txt");
 
 		Console.Write("do you want to quit? (yes or no): ");
         answer = Convert.ToString(Console.ReadLine());
 
-        if (answer == "no")
+	  	while (answer == "no")
 		{
-			if(someText == )
-			counter ++;
-			Console.WriteLine("the counter is at " + counter);
+			if (answer == "no")
+			{
+				counter ++;
+				Console.WriteLine("the counter is at " + counter);
+	
+				await File.WriteAllTextAsync("WriteText.txt", counter.ToString());
+	    		Console.WriteLine("File Created ...");
+	
+	        	var someText = await File.ReadAllTextAsync(@"WriteText.txt");
+	
+				Console.Write("do you want to quit? (yes or no): ");
+	        	answer = Convert.ToString(Console.ReadLine());
+			}
 		}
-	  	else
-	  	{
+			counter = 0;
 		  Console.WriteLine("\nDone.");
-		}
 
 
     }
