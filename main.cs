@@ -14,7 +14,7 @@ class Program
 
         while (answer == "no")
         {
-            counter ++;
+            counter++;
             Console.WriteLine("the counter is at " + counter);
 
             await File.WriteAllTextAsync("WriteText.txt", counter.ToString());
